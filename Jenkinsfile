@@ -4,12 +4,16 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building....'
+                echo 'Building...'
+                sh 'make' 
+                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo 'Testing...'
+                sh 'make check || true' 
+                junit '**/target/*.xml' 
             }
         }
         stage('Deploy') {
