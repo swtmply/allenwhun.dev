@@ -2,9 +2,18 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Test build') {
+            steps{
+                echo 'executing yarn?!?!?!'
+                nodejs('Node-16.14'){
+                    sh 'yarn install'
+                    sh 'yarn build'
+                }
+            }
+        }
+/*        stage('Build') {
             steps {
-                echo 'Building...'
+                echo 'Building...
                 //sh 'make' 
                 //archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
             }
@@ -20,6 +29,7 @@ pipeline {
             steps {
                 echo 'Deploying..'
             }
+*/
         }
     }
 }
