@@ -1,15 +1,19 @@
 pipeline {
-    agent any
+    agent {
+        Dockerfile true
+    }
 
     stages {
         stage('Build') {
             steps{
-                echo 'executing yarn?!?!?!'
+                echo 'Yarning yarn?!?!?'
+                bat 'node --version'
                 nodejs('Node-16.14'){
                     echo 'passed nodeJS'
                     bat 'yarn install'
                     bat 'yarn build'
                 }
+                bat 'make'
             }
         }
 
