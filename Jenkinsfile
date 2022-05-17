@@ -6,6 +6,7 @@ pipeline {
             steps{
                 echo 'executing yarn?!?!?!'
                 nodejs('Node-16.14'){
+                    echo 'passed nodeJS'
                     sh 'yarn install'
                     sh 'yarn build'
                 }
