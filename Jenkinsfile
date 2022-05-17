@@ -6,7 +6,7 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh 'make' 
-                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
+                archiveArtifacts fingerprint: true 
             }
         }
         stage('Test') {
