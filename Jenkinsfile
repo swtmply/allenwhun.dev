@@ -16,7 +16,6 @@ pipeline {
                     bat 'yarn install'
                     bat 'yarn build'
                 }
-                bat 'node --version'
                 bat 'make'
             }
         }
