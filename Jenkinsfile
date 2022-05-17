@@ -1,10 +1,11 @@
 pipeline {
-    agent {
-        dockerfile true
-    }
+    agent none
 
     stages {
         stage('Build') {
+            agent{
+                docker {image 'node:16-alpine'}
+            }
             steps{
                 echo 'Yarning yarn?!?!?'
                 bat 'node --version'
