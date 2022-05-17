@@ -4,14 +4,15 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building...'
-                sh 'make' 
+                echo 'Running ${env.BUILD_ID} on ${env.JENKINS_URL}'
+                bat 'make' 
+                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'make check || true' 
+                bat 'make check || true' 
                 junit '**/target/*.xml' 
             }
         }
