@@ -12,7 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-                bat 'make check || true' 
+                sh 'make check || true' 
                 //junit '**/target/*.xml' 
             }
         }
