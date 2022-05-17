@@ -15,8 +15,9 @@ pipeline {
                     echo 'passed nodeJS'
                     bat 'yarn install'
                     bat 'yarn build'
+                    bat 'npm -v'
                 }
-                bat 'make'
+                echo 'letsgooooo!!'
             }
         }
 
