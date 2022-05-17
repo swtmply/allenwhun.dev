@@ -6,7 +6,6 @@ pipeline {
             steps {
                 echo 'Building...'
                 sh 'make' 
-                archiveArtifacts fingerprint: true 
             }
         }
         stage('Test') {
