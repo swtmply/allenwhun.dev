@@ -16,6 +16,7 @@ pipeline {
                     bat 'yarn build'
                     bat 'npm -v'
                     echo 'passed nodeJS'
+                    //sample 12345
                 }
                 echo 'Build Completed, Continuing into Testing...'
             }
