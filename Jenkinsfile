@@ -12,10 +12,10 @@ pipeline {
             steps{
                 echo 'Configuring YARN..'
                 nodejs('Node-16.14'){
-                    echo 'passed nodeJS'
                     bat 'yarn install'
                     bat 'yarn build'
                     bat 'npm -v'
+                    echo 'passed nodeJS'
                 }
                 echo 'Build Completed, Continuing into Testing...'
             }
