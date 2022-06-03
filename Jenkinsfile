@@ -12,10 +12,8 @@ pipeline {
             steps{
                 echo 'Configuring YARN..'
                 nodejs('Node-16.14'){
-                    git 'clone https://github.com/swtmply/allenwhun.dev.git'
                     bat 'yarn install'
                     bat 'yarn build'
-                    bat 'npm i *'
                     bat 'npm -v'
                     echo 'passed nodeJS'
                     //sample 12345
