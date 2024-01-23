@@ -11,7 +11,7 @@ export const fontSans = FontSans({
 export const fontMono = FontMono({
   weight: ["300", "400", "500"],
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-mono",
 });
 
 export const metadata: Metadata = {
@@ -29,8 +29,8 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
-          fontMono.variable
+          fontMono.variable,
+          fontSans.variable
         )}
       >
         {children}
