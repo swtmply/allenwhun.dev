@@ -19,7 +19,10 @@ export default function Home() {
               <GlobeIcon /> {RESUME_DATA.contact.location}
             </p>
             <p>
-              <MailIcon /> {RESUME_DATA.contact.email}
+              <MailIcon />
+              <a href={`mailto:${RESUME_DATA.contact.email}`} target="_blank">
+                {RESUME_DATA.contact.email}
+              </a>
             </p>
             <p>
               <PhoneIcon /> {RESUME_DATA.contact.phone}

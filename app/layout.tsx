@@ -15,8 +15,8 @@ const fontMono = FontMono({
 });
 
 export const metadata: Metadata = {
-  title: "Allenwhun Dev",
-  description: "John Allen Delos Reyes personal website",
+  title: "John Allen Delos Reyes",
+  description: "Full Stack React Developer using Next.js and React Native",
 };
 
 export default function RootLayout({
