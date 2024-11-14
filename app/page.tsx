@@ -72,7 +72,7 @@ export default function Home() {
                   </p>
                 </div>
                 <p className="font-mono text-sm">{work.title}</p>
-                <p className="text-pretty font-mono text-sm text-muted-foreground">
+                <p className="whitespace-pre-wrap text-pretty font-mono text-sm text-muted-foreground">
                   {work.description}
                 </p>
               </div>

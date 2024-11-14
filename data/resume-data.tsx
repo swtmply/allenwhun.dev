@@ -1,8 +1,8 @@
 export const RESUME_DATA = {
   name: "John Allen Delos Reyes",
-  about: "Full Stack React Developer using Next.js and React Native",
+  about: "Full Stack Developer using Javascript and Typescript",
   summary:
-    "As a Full Stack React Developer, I’ve created and deployed a lot of products using React. With or without team, I’m confident that I can deliver quality and effective environment for the team and the project. I mostly work on React, Typescript, Next.js features, and SQL databases with ORMs like Prisma and Drizzle. I’ve been working for 2 years now and experienced working remotely with companies.",
+    "As a Full Stack Developer, I’ve created and deployed a lot of products using React. With or without a team, I’m confident that I can deliver quality and effective environment for the project. I mostly work on React, Typescript, Next.js features, and SQL databases with ORMs like Prisma and Drizzle. I’ve been working for 2 years now and experienced working remotely with a lot of companies in and out of the Philippines.",
   contact: {
     email: "delosreyesjohnallen@gmail.com",
     phone: "+639954135867",
@@ -25,8 +25,12 @@ export const RESUME_DATA = {
       items: ["React", "Next.js", "React Native", "Typescript", "Javascript"],
     },
     {
+      title: "Cloud Services",
+      items: ["AWS", "Supabase", "Firebase", "Vercel"],
+    },
+    {
       title: "Others",
-      items: ["Git", "Docker", "Cypress", "Hasura", "Supabase", "Firebase"],
+      items: ["Git", "Docker", "Cypress", "Hasura", "Playwright", "FFMPEG"],
     },
   ],
   work: [
@@ -42,11 +46,11 @@ export const RESUME_DATA = {
     {
       company: "Fullscale",
       link: "",
-      title: "Full Stack React Developer",
+      title: "Full Stack Developer",
       start: "Nov 2022",
       end: "Present",
       description:
-        "Worked with different clients remotely from across the world. Implemented card payment portal, fixed a lot of layout issues with Ant Design, logic issues with GraphQL and Hasura. Created end-to-end test cases using Cypress. While on the bench I up skill with the tech stack I’m familiar and learned React Native in the process and built applications using Next.js and React Native with the likes of Contact Management System, Social Media for Filipino Cooks (Mobile), and a lot more.",
+        "Built a lot of products for different clients remotely from across the world. Implemented card payment portal, fixed a lot of layout issues with Ant Design, logic issues with GraphQL and Hasura. Created end-to-end test cases using Cypress. \n\nRedesigned a whole application using the MERN stack with AWS S3. I also learned ffmpeg to process videos and images for the application. Implemented third party authentication for the popular social media platforms. \n\nWhile on the bench I up skill with the tech stack I’m familiar and learned React Native in the process and built applications using Next.js and React Native with the likes of Contact Management System, Social Media for Filipino Cooks (Mobile), and A bill-splitting application.",
     },
   ],
   projects: [
@@ -99,6 +103,23 @@ export const RESUME_DATA = {
         "Supabase",
         "Typescript",
       ],
+    },
+    {
+      title: "Hati Tayo",
+      description: "An application to split the bill with your friends",
+      techStack: [
+        "Side Project",
+        "React Native",
+        "Expo",
+        "Supabase",
+        "Prisma",
+        "Typescript",
+      ],
+    },
+    {
+      title: "Broadway Pyschiatry",
+      description: "An application for a psychiatry clinic",
+      techStack: ["Side Project", "Next.js", "Drizzle", "SQLite", "Typescript"],
     },
   ],
 };
