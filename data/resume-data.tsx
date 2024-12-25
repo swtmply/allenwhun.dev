@@ -39,7 +39,7 @@ export const RESUME_DATA = {
       link: "",
       title: "Intern → Full Stack React Developer",
       start: "March 2022",
-      end: "Nov 2022",
+      end: "November 2022",
       description:
         "Built a web application that monitors the live data for the 2022 Presidential Election. Implemented real time data using web sockets for the city action dispatch application, handled its state management using Zustand and its process of event being created to resolving the events using Next.js API routes with Prisma.",
     },
@@ -47,8 +47,8 @@ export const RESUME_DATA = {
       company: "Fullscale",
       link: "",
       title: "Full Stack Developer",
-      start: "Nov 2022",
-      end: "Present",
+      start: "November 2022",
+      end: "December 2024",
       description:
         "Built a lot of products for different clients remotely from across the world. Implemented card payment portal, fixed a lot of layout issues with Ant Design, logic issues with GraphQL and Hasura. Created end-to-end test cases using Cypress. \n\nRedesigned a whole application using the MERN stack with AWS S3. I also learned ffmpeg to process videos and images for the application. Implemented third party authentication for the popular social media platforms. \n\nWhile on the bench I up skill with the tech stack I’m familiar and learned React Native in the process and built applications using Next.js and React Native with the likes of Contact Management System, Social Media for Filipino Cooks (Mobile), and A bill-splitting application.",
     },
