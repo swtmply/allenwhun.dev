@@ -102,7 +102,7 @@ export default function Home() {
           <h2 className="scroll-m-20 text-xl font-bold tracking-tight">
             Projects
           </h2>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {RESUME_DATA.projects.map((project) => (
               <div
                 key={project.title}

@@ -2,7 +2,7 @@ export const RESUME_DATA = {
   name: "John Allen Delos Reyes",
   about: "Full Stack Developer using Javascript and Typescript",
   summary:
-    "As a Full Stack Developer, I’ve created and deployed a lot of products using React. With or without a team, I’m confident that I can deliver quality and effective environment for the project. I mostly work on React, Typescript, Next.js features, and SQL databases with ORMs like Prisma and Drizzle. I’ve been working for 2 years now and experienced working remotely with a lot of companies in and out of the Philippines.",
+    "As a Full Stack Developer, I’ve created and deployed a lot of products using React. With or without a team, I’m confident that I can deliver quality and effective environment for the project. I mostly work on React, React Native, Typescript, Next.js features, Expo features, and SQL databases with ORMs like Prisma and Drizzle. I’ve been working for 3 years now and experienced working remotely with a lot of companies in and out of the Philippines.",
   contact: {
     email: "delosreyesjohnallen@gmail.com",
     phone: "+639954135867",
@@ -22,20 +22,20 @@ export const RESUME_DATA = {
     },
     {
       title: "Frontend",
-      items: ["React", "Next.js", "React Native", "Typescript", "Javascript"],
+      items: ["React", "Next.js", "React Native", "Typescript", "Javascript", "Expo"],
     },
     {
       title: "Cloud Services",
-      items: ["AWS", "Supabase", "Firebase", "Vercel"],
+      items: ["AWS", "Supabase", "Firebase", "Vercel", "Azure DevOps", "Convex"],
     },
     {
       title: "Others",
-      items: ["Git", "Docker", "Cypress", "Hasura", "Playwright", "FFMPEG"],
+      items: ["Git", "Docker", "Cypress", "Hasura", "Playwright", "FFMPEG", "Clerk"],
     },
   ],
   work: [
     {
-      company: "Ebizolutions Inc.",
+      company: "Ebizolutions",
       link: "",
       title: "Intern → Full Stack React Developer",
       start: "March 2022",
@@ -52,6 +52,14 @@ export const RESUME_DATA = {
       description:
         "Built a lot of products for different clients remotely from across the world. Implemented card payment portal, fixed a lot of layout issues with Ant Design, logic issues with GraphQL and Hasura. Created end-to-end test cases using Cypress. \n\nRedesigned a whole application using the MERN stack with AWS S3. I also learned ffmpeg to process videos and images for the application. Implemented third party authentication for the popular social media platforms. \n\nWhile on the bench I up skill with the tech stack I’m familiar and learned React Native in the process and built applications using Next.js and React Native with the likes of Contact Management System, Social Media for Filipino Cooks (Mobile), and A bill-splitting application.",
     },
+    {
+      company: "Nowcom",
+      link: "",
+      title: "Mid React Native Engineer III",
+      start: "January 2025",
+      end: "Present",
+      description: "Onboarded with an existing project and immediately fixed bugs, implemented new features and created new UIs for the application. I also am responsible for maintaining the CI/CD for the application using Azure DevOps.",
+    }
   ],
   projects: [
     {
@@ -64,17 +72,6 @@ export const RESUME_DATA = {
       description:
         "An application for tourist that creates an itinerary based on your current location",
       techStack: ["Capstone Project", "Dart", "Flutter", "Firebase"],
-    },
-    {
-      title: "My Day",
-      description: "Digital daily journal",
-      techStack: [
-        "Side Project",
-        "Next.js",
-        "PostgreSQL",
-        "Prisma",
-        "Typescript",
-      ],
     },
     {
       title: "Buildustry",
@@ -106,13 +103,13 @@ export const RESUME_DATA = {
     },
     {
       title: "Hati Tayo",
-      description: "An application to split the bill with your friends",
+      description: "An application to split the bill with your friends. I've redesign and redone this project as of Jun 2025",
       techStack: [
         "Side Project",
         "React Native",
         "Expo",
-        "Supabase",
-        "Prisma",
+        "Convex",
+        "Clerk",
         "Typescript",
       ],
     },
