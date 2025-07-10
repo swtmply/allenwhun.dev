@@ -1,8 +1,8 @@
 export const RESUME_DATA = {
   name: "John Allen Delos Reyes",
-  about: "Full Stack Developer using Javascript and Typescript",
+  about: "Full Stack Developer - Frontend Focused",
   summary:
-    "As a Full Stack Developer, I’ve created and deployed a lot of products using React. With or without a team, I’m confident that I can deliver quality and effective environment for the project. I mostly work on React, React Native, Typescript, Next.js features, Expo features, and SQL databases with ORMs like Prisma and Drizzle. I’ve been working for 3 years now and experienced working remotely with a lot of companies in and out of the Philippines.",
+    "I’ve been working for 3 years now and experienced working remotely with a lot of companies in and out of the Philippines. I’ve created and deployed a lot of products using React with different backend solutions. I mostly work on React, React Native, Typescript, Next.js features, Expo features, and SQL databases with ORMs. ",
   contact: {
     email: "delosreyesjohnallen@gmail.com",
     phone: "+639954135867",
@@ -58,7 +58,7 @@ export const RESUME_DATA = {
       title: "Mid React Native Engineer III",
       start: "January 2025",
       end: "Present",
-      description: "Onboarded with an existing project and immediately fixed bugs, implemented new features and created new UIs for the application. I also am responsible for maintaining the CI/CD for the application using Azure DevOps.",
+      description: "Onboarded with an existing project and immediately fixed bugs, implemented new features and created new UIs for the application. I also am responsible for maintaining the CI/CD for the application using Azure DevOps and updating and creating yaml configurations. \n\nI also upgraded the react native application to use the latest version of react native and also upgraded the dependencies to the latest version. Implement stripe SDK to react native for online payment processing.",
     }
   ],
   projects: [
