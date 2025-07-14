@@ -75,6 +75,14 @@ export default function Home() {
                 <p className="whitespace-pre-wrap text-pretty font-mono text-sm text-muted-foreground">
                   {work.description}
                 </p>
+                <div className="flex flex-wrap gap-2">
+                  <h4 className="font-mono text-sm">Technologies Used: </h4>
+                  {work.stack.map((stack) => (
+                    <Badge variant={"outline"} key={stack}>
+                      {stack}
+                    </Badge>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
@@ -102,7 +110,7 @@ export default function Home() {
           <h2 className="scroll-m-20 text-xl font-bold tracking-tight">
             Projects
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
             {RESUME_DATA.projects.map((project) => (
               <div
                 key={project.title}
