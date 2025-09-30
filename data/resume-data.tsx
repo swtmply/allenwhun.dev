@@ -36,14 +36,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Cloud Services",
-      items: [
-        "AWS",
-        "Supabase",
-        "Firebase",
-        "Vercel",
-        "Azure DevOps",
-        "Convex",
-      ],
+      items: ["AWS", "Supabase", "Firebase", "Vercel", "Convex"],
     },
     {
       title: "Others",
@@ -55,6 +48,7 @@ export const RESUME_DATA = {
         "Playwright",
         "FFMPEG",
         "Clerk",
+        "Azure DevOps",
       ],
     },
   ],
@@ -64,6 +58,11 @@ export const RESUME_DATA = {
       title: "Freelance Developer",
       start: "January 2022",
       end: "Present",
+      bullets: [
+        "Built multiple web applications for different clients using React and Next.js.",
+        "Created and designed UIs for different applications using Shadcn UI and Tailwind CSS.",
+        "Implemented authentication using Clerk, NextAuth and Firebase Authentication.",
+      ],
       description:
         "I also built some projects using my primary React tech stack for a lot of different clients across the world. I showcased my technical and communication skills with the clients to provide and give them the best service and support.\n\nThe highlight of my freelancing experience is the freedom to use anything that I learned and cultivated throughout the years of working in the industry. I also did learn a lot of experiences that you will never be able to learn at school or in the internet.",
       stack: [
@@ -86,6 +85,12 @@ export const RESUME_DATA = {
       title: "Intern → Full Stack React Developer",
       start: "March 2022",
       end: "November 2022",
+      bullets: [
+        "Developed a web application that monitors the live data for the 2022 Presidential Election.",
+        "Implemented real time data using web sockets for the city action dispatch application.",
+        "Handled state management using Zustand.",
+        "Created Next.js API routes with Prisma to handle the process of event being created to resolving the events.",
+      ],
       description:
         "Built a React web application that monitors the live data for the 2022 Presidential Election. Implemented real time data using web sockets for the city action dispatch application, handled its state management using Zustand and its process of event being created to resolving the events using Next.js API routes with Prisma.",
       stack: [
@@ -104,6 +109,14 @@ export const RESUME_DATA = {
       title: "Full Stack Developer",
       start: "November 2022",
       end: "December 2024",
+      bullets: [
+        "Developed and maintained multiple web applications for different clients using React and the MERN stack.",
+        "Implemented card payment portal for a bodyshop application.",
+        "Created end-to-end test cases using Cypress and unit test cases using Jest.",
+        "Redesigned a whole application using the MERN stack with AWS S3 and ffmpeg to process videos and images for the application.",
+        "Implemented third party authentication for the popular social media platforms.",
+        "Built applications using Next.js and React Native with the likes of Contact Management System, Social Media for Filipino Cooks (Mobile), and A bill-splitting application.",
+      ],
       description:
         "Built a lot of products for different clients remotely from across the world using React on the web. Implemented card payment portal, fixed a lot of layout issues with Ant Design, logic issues with GraphQL and Hasura. Created end-to-end test cases using Cypress. \n\nRedesigned a whole application using the MERN stack with AWS S3. I also learned ffmpeg to process videos and images for the application. Implemented third party authentication for the popular social media platforms. \n\nWhile on the bench I up skill with the tech stack I’m familiar and learned React Native in the process and built applications using Next.js and React Native with the likes of Contact Management System, Social Media for Filipino Cooks (Mobile), and A bill-splitting application.",
       stack: [
@@ -128,10 +141,26 @@ export const RESUME_DATA = {
       link: "",
       title: "Mid React Native Engineer III",
       start: "January 2025",
-      end: "Present",
+      end: "September 2025",
+      bullets: [
+        "Fixed bugs, implemented new features and created new UIs for the application.",
+        "Maintained the CI/CD for the application using Azure DevOps and updating and creating yaml configurations.",
+        "Upgraded the react native application to use the latest version of react native and also upgraded the dependencies to the latest version.",
+        "Implemented stripe SDK to react native for online payment processing.",
+        "Responsible for the migration and maintaining of react native version and its dependencies.",
+      ],
       description:
         "Onboarded with an existing project and immediately fixed bugs, implemented new features and created new UIs for the application. I also am responsible for maintaining the CI/CD for the application using Azure DevOps and updating and creating yaml configurations. \n\nI also upgraded the react native application to use the latest version of react native and also upgraded the dependencies to the latest version. Implement stripe SDK to react native for online payment processing.",
       stack: ["React Native", "Expo", "Stripe", "Azure DevOps", "Nx Workspace"],
+    },
+    {
+      company: "ECLARO",
+      link: "",
+      title: "React Developer",
+      start: "September 2025",
+      end: "Present",
+      bullets: ["Fixed code quality for the SonarQube code coverage report."],
+      stack: ["React", "Redux"],
     },
   ],
   projects: [

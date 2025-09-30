@@ -1,4 +1,3 @@
-import { GlobeIcon, MailIcon, PhoneIcon } from "~/components/icons";
 import { Badge } from "~/components/ui/badge";
 import { RESUME_DATA } from "~/data/resume-data";
 
@@ -15,18 +14,17 @@ export default function Home() {
           </p>
 
           <div className="space-y-2 font-mono text-sm text-muted-foreground [&>*]:flex [&>*]:items-center [&>*]:gap-2">
+            <p>{RESUME_DATA.contact.location}</p>
             <p>
-              <GlobeIcon /> {RESUME_DATA.contact.location}
-            </p>
-            <p>
-              <MailIcon />
-              <a href={`mailto:${RESUME_DATA.contact.email}`} target="_blank">
+              <a
+                className="duration-200 hover:text-black"
+                href={`mailto:${RESUME_DATA.contact.email}`}
+                target="_blank"
+              >
                 {RESUME_DATA.contact.email}
               </a>
             </p>
-            <p>
-              <PhoneIcon /> {RESUME_DATA.contact.phone}
-            </p>
+            <p>{RESUME_DATA.contact.phone}</p>
           </div>
         </section>
 
@@ -62,9 +60,9 @@ export default function Home() {
           <h2 className="scroll-m-20 text-xl font-bold tracking-tight">
             Work Experience
           </h2>
-          <div className="flex flex-col-reverse gap-y-2">
+          <div className="flex flex-col-reverse gap-y-8">
             {RESUME_DATA.work.map((work) => (
-              <div key={`${work.company}-${work.start}`} className="space-y-2">
+              <div key={`${work.company}-${work.start}`} className="space-y-4">
                 <div className="flex items-center justify-between font-medium">
                   <h3 className="text-lg">{work.company}</h3>
                   <p className="text-sm">
@@ -72,10 +70,16 @@ export default function Home() {
                   </p>
                 </div>
                 <p className="font-mono text-sm">{work.title}</p>
-                <p className="whitespace-pre-wrap text-pretty font-mono text-sm text-muted-foreground">
-                  {work.description}
-                </p>
-                <div className="flex flex-wrap gap-2">
+
+                <ul className="whitespace-pre-wrap text-pretty font-mono text-sm text-muted-foreground">
+                  {work.bullets.map((bullet, index) => (
+                    <li key={index} className="list-disc">
+                      {bullet}
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="flex flex-wrap gap-2 print:hidden">
                   <h4 className="font-mono text-sm">Technologies Used: </h4>
                   {work.stack.map((stack) => (
                     <Badge variant={"outline"} key={stack}>
